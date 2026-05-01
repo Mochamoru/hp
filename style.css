@@ -92,6 +92,12 @@ h2 {
   gap: 20px;
 }
 
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ギャラリー画像 */
 .gallery-img {
   width: 100%;
@@ -101,7 +107,20 @@ h2 {
   cursor: pointer;
 }
 
+/* アスペクト比 */
+.item {
+  aspect-ratio: 1 / 1; 
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* モーダル */
+
 .modal {
   display: none;
   position: fixed;
@@ -146,6 +165,12 @@ h2 {
 .item:hover {
   background: #d4edff;
   transform: translateY(-5px);
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
 }
 
 /* Links */
