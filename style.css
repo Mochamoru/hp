@@ -34,6 +34,7 @@ header h1 {
   color: #ffffff;
 }
 
+/* アバウト */
 .about-container {
   display: flex;
   font-size: 20px;
@@ -53,6 +54,7 @@ header h1 {
   .about-container {
     flex-direction: column; /* 縦並びにする */
     text-align: center;
+    font-size: 10px;
   }
 
   .about-logo {
